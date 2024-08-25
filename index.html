@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameVerse - Productos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111110;
+      background-image: url("imágenes/patron.png");
+      color: #FFFFFF;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 2px 0;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+    }
+    header img {
+      height: 100px;
+      margin-right: 20px;
+      border: solid 5px #5e315f;
+    }
+    header h1 {
+      font-size: 30px;
+      margin: 0;
+    }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      overflow: hidden;
+    }
+    section {
+      padding: 20px;
+      border-bottom: 0.5px solid #ccc;
+      background-color: rgba(0, 0, 0, 0.7); 
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    h1, h2 {
+      color: #e2c7e4;
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    .titulo {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      font-size: 36px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      backdrop-filter: blur(10px);
+    }
+    #products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.7); 
+      border-radius: 20px;
+      padding: 20px;
+      backdrop-filter: blur(10px); 
+    }
+    .product-card {
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.7); 
+      border-radius: 10px;
+      box-shadow: 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border: solid 5px #5e315f;
+      border-radius: 10px;
+    }
+    .product-card p {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #e2c7e4;
+    }
+    .product-card .price {
+      font-size: 18px;
+      color: #f59bf7;
+      margin-top: 5px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: left;
+      padding: 10px 50px;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    footer address {
+      font-style: italic;
+    }
+    footer a {
+        font-size: 25px;
+        color: #e2c7e4;
+        text-decoration: line;
+        display: block;
+        margin-bottom: 5px;
+        text-align: center;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="imágenes/logo.png" alt="Logo GameVerse" />
+    <h1>GameVerse</h1>
+  </header>
+
+  <div class="container">
+    <h1 style="color: #f59bf7;" class="titulo">Nuestros Productos</h1>
+
+    <section id="products">
+      <div class="product-card">
+        <img src="imágenes/ps5.png" alt="PlayStation 5" />
+        <p>PlayStation 5 Slim</p>
+        <p class="price">S/1890.00</p>
+        <p>Gráficos impresionantes y rendimiento increíble.</p>
+      </div>
+      <div class="product-card">
+        <img src="imágenes/xbox.png" alt="Xbox Series X" />
+        <p>Xbox Series X</p>
+        <p class="price">S/2000.00</p>
+        <p>Potencia y velocidad en una consola diseñada para la nueva generación.</p>
+      </div>
+      <div class="product-card">
+        <img src="imágenes/switch.png" alt="Nintendo Switch OLED" />
+        <p>Nintendo Switch OLED</p>
+        <p class="price">S/1490.00</p>
+        <p>Disfruta de tus juegos favoritos en cualquier lugar con la nueva pantalla OLED.</p>
+      </div>
+      <div class="product-card">
+        <img src="imágenes/pcgamer.png" alt="PC Gaming" />
+        <p>PC Gaming</p>
+        <p class="price">S/4500.00</p>
+        <p>Equipado con la última tecnología para juegos de alta demanda.</p>
+      </div>
+      <div class="product-card">
+        <img src="imágenes/oculus.png" alt="Oculus Quest 2" />
+        <p>Oculus Quest 2</p>
+        <p class="price">S/1200.00</p>
+        <p>Experiencia de realidad virtual inmersiva sin necesidad de cables.</p>
+      </div>
+      <div class="product-card">
+        <img src="imágenes/audi.png" alt="Auriculares Gaming" />
+        <p>Auriculares Gaming</p>
+        <p class="price">S/300.00</p>
+        <p>Sonido envolvente y micrófono de alta calidad para una experiencia de juego total.</p>
+      </div>
+      <div class="product-card">
+        <img src="imágenes/monitor.png" alt="Monitor 4K" />
+        <p>Monitor 4K</p>
+        <p class="price">S/1150.00</p>
+        <p>Imágenes nítidas y fluidas para una experiencia visual impresionante.</p>
+      </div>
+      <div class="product-card">
+        <img src="imágenes/teclado.png" alt="Teclado Mecánico" />
+        <p>Teclado Mecánico</p>
+        <p class="price">S/450.00</p>
+        <p>Precisión y durabilidad para sesiones de juego intensas.</p>
+      </div>
+      <div class="product-card">
+        <img src="imágenes/mouse.png" alt="Ratón Gaming" />
+        <p>Ratón Gaming</p>
+        <p class="price">S/219.00</p>
+        <p>Control preciso y rápido para un rendimiento superior.</p>
+      </div>
+      <div class="product-card">
+        <img src="imágenes/tarjeta.png" alt="Tarjeta gráfica" />
+        <p>Tarjeta gráfica</p>
+        <p class="price">S/1350.00</p>
+        <p>Tarjeta gráfica para juegos de alta demanda y tareas de productividad.</p>
+      </div>
+      <div class="product-card">
+        <img src="imágenes/juego.jpg" alt="Juego PS5" />
+        <p>Juego PS5</p>
+        <p class="price">S/249.00</p>
+        <p>Juego para consolas de última generación.</p>
+      </div>
+      <div class="product-card">
+        <img src="imágenes/minecraft.png" alt="Juego Xbox" />
+        <p>Juego Xbox</p>
+        <p class="price">S/119.90</p>
+        <p>Juego para consolas de última generación.</p>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <a href="https://aspm1901.github.io/Contact-us-page/" target="_top">¡Contáctanos!</a>
+    <p>Nuestra dirección es: <address>Madre de Dios 371 - La Molina</address></p>
+    <p>Número de contacto: +51 960 172 519</p>
+    <small>2024 Fundamentos de diseño web - Todos los derechos reservados</small>
+  </footer>
+</body>
+</html>
